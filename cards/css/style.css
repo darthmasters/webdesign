@@ -1,0 +1,54 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'venticf-medium';
+	transition: all .5s;
+}
+
+@font-face {
+	font-family: 'venticf-medium';
+	src: local('VentiCF-Medium.otf'), url('../fonts/VentiCF-Medium.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'venticf-bold';
+	src: local('VentiCF-Bold.otf'), url('../fonts/VentiCF-Bold.otf') format('opentype');
+}
+
+.cards {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: 1040px;
+	margin: 0 auto;
+}
+
+.card {
+	flex: 1;
+	flex-basis: calc(100% / 2 - 20px);
+	margin: 10px;
+	background-color: gray;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.card img { width: 100%; }
+.card .titulo { margin: 10px 20px 0; }
+.card .excerpt { margin: 10px 20px; }
+.card .info {
+	margin: 10px 20px 0px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+

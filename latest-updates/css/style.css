@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'venticf-medium';
+  transition: all .5s; }
+
+@font-face {
+  font-family: 'venticf-medium';
+  src: local("VentiCF-Medium.otf"), url("../fonts/VentiCF-Medium.otf") format("opentype"); }
+@font-face {
+  font-family: 'venticf-bold';
+  src: local("VentiCF-Bold.otf"), url("../fonts/VentiCF-Bold.otf") format("opentype"); }
+section {
+  padding: 50px 0; }
+  section header {
+    text-align: center;
+    margin-bottom: 30px; }
+    section header .title {
+      font-size: 3em;
+      font-family: 'venticf-bold'; }
+    section header .description {
+      font-size: 1.2em; }
+  section .updates {
+    margin: 0 auto;
+    width: 1040px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 5px; }
+    section .updates article {
+      min-height: 200px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      background: gray center center no-repeat;
+      background-size: cover;
+      position: relative;
+      border-radius: 5px;
+      overflow: hidden; }
+      section .updates article:nth-child(1) {
+        grid-row-start: 1;
+        grid-row-end: 3; }
+      section .updates article:nth-child(4) {
+        grid-row-start: 2;
+        grid-row-end: 4; }
+      section .updates article .info {
+        margin: 0 0 18px 20px;
+        position: relative;
+        z-index: 2; }
+        section .updates article .info .tag {
+          padding: 10px 20px;
+          display: inline-block;
+          background-color: #000;
+          margin: 0 0 20px -20px;
+          color: #fff; }
+        section .updates article .info .title {
+          font-family: 'venticf-bold';
+          font-size: 1.6em;
+          line-height: 1;
+          margin-bottom: 10px;
+          color: #fff; }
+        section .updates article .info .meta {
+          color: #fff; }
+      section .updates article .overlay {
+        background: linear-gradient(transparent, #000);
+        transition: all .5s;
+        position: absolute;
+        height: 60%;
+        opacity: 1;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 1; }
+
+@media screen and (max-width: 800px) {
+  section .updates {
+    width: calc(100% - 20px);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 10px; } }
+@media screen and (max-width: 480px) {
+  section header {
+    margin: 0 10px 30px; }
+  section .updates {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px; }
+    section .updates article:nth-child(1) {
+      grid-row-end: inherit; } }
+
+/*# sourceMappingURL=style.css.map */
